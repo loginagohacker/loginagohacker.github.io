@@ -1,7 +1,7 @@
 body {
   margin: 0;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #272f2f;
+  background: url(background.jpeg) repeat 0 0;
   margin-left: 380px;
 }
 a {
