@@ -9,7 +9,7 @@ a {
   text-decoration: inherit;
   -webkit-tap-highlight-color: transparent;
 }
-p {
+p, LI, UL {
   color: white;
   text-align: left;
 }
