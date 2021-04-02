@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>NoteTaker</title>
+    <link rel="shortcut icon" type="image/png" href="flipai.png"/> 
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+  </head>
+  <body>
+    <ul>
+      <li><a rel="gameindex" href="https://loginagohacker.github.io/morewebsites/indexdirectory.html">Click here to back to the games list.</a></li>
+      <li><a rel="realHome" href="https://loginagohacker.github.io/index.html">Click here to go back to the main websites list</a></li>
+    </ul>
+<button onclick="openFullscreen();">Enter Fullscreen Mode</button>
+<iframe src='https://omkarpathak27.pythonanywhere.com/' width='970' height='600' frameborder='0' scrolling='no' msallowfullscreen="yes" mozallowfullscreen="yes" allowfullscreen="yes"></iframe>
+<script>
+var elem = document.getElementById("game");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+  </body>
+</html>
