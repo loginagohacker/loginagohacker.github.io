@@ -61,10 +61,10 @@ table, th, td {
 }
   
 #header-image-menu img{
-    width: auto;
+    width: 1300px;
     margin: none;
     padding: none;
-    height: auto;
+    height: 200px;
 }
   
 #image-text{
