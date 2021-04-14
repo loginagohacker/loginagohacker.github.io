@@ -21,7 +21,7 @@ a:active {
 
 a:visited {
   background-color: inherit;
-  color: grey;
+  color: gray;
 }
 p, LI, UL {
   color: white;
@@ -48,11 +48,34 @@ table, th, td {
   border-collapse: collapse;
 }
 .header {
-  padding: 60px;
   text-align: center;
-  background-image: url("editedlhpic.jpg");
+  background-image: url("PSX_20210414_111706.jpg");
   color: white;
   font-size: 30px;
 }
+/*****************************/
+/* Styling Header Image Menu */
+/*****************************/
+#header-image-menu{
+    top: 10px;
+}
+  
+#header-image-menu img{
+    width: 1300px;
+    margin: none;
+    padding: none;
+    height: 200px;
+}
+  
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Roboto';
+    transform: translate(-%30, %0);
+    color: grey;
+    text-align: center;
+}
 
   
+
