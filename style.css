@@ -12,15 +12,16 @@ a {
 }
 
 a:hover {
-  background-color: #555;
+  background-color: #404040;
 }
 
 a:active {
-  background-color: black;
+  background-color: #686868;
 }
 
 a:visited {
-  background-color: #ccc;
+  background-color: inherit;
+  color: grey;
 }
 p, LI, UL {
   color: white;
