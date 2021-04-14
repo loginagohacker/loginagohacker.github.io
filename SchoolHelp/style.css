@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  background-color: #555;
+  background-color: grey;
 }
 
 a:active {
@@ -22,14 +22,15 @@ a:active {
 
 a:visited {
   background-color: #ccc;
+  color: grey;
 }
   
 
-p, LI, UL {
+p, {
   color: white;
   text-align: left;
 }
-P {
+P, LI, UL {
   color: white;
   text-align: left;
 }
