@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  background-color: inherit;
+  text-color: white;
 }
 
 a:active {
