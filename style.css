@@ -21,7 +21,6 @@ a:active {
 
 a:visited {
   background-color: inherit;
-  color: gray;
 }
 p, LI, UL {
   color: white;
