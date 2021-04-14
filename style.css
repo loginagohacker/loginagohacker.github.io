@@ -16,7 +16,7 @@ a:active {
   color: gray;
 }
 
-a:active {
+a:hover {
   background-color: #686868;
 }
 
