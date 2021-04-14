@@ -5,31 +5,77 @@ body {
   margin-left: 380px;
 }
 a {
-  background-color: red;
-  color: white;
+  background-color: inherit;
+  color: inherit;
   padding: 1em 1.5em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 a:hover {
-  background-color: #555;
+  background-color: #404040;
 }
 
 a:active {
-  background-color: black;
+  background-color: #686868;
 }
 
 a:visited {
-  background-color: #ccc;
+  background-color: inherit;
+  color: gray;
 }
 p, LI, UL {
   color: white;
   text-align: left;
 }
-h1, h2, h3, h4, h5, h6 {
+P {
+  color: white;
+  text-align: left;
+}
+h1 {
   color: white;
   text-align: center;
 }
+h2 {
+  color: white;
+  text-align: center;
+}
+h3 {
+  color: white;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.header {
+  text-align: center;
+  background-image: url("PSX_20210414_111706.jpg");
+  color: white;
+  font-size: 30px;
+}
+/*****************************/
+/* Styling Header Image Menu */
+/*****************************/
+#header-image-menu{
+    top: 10px;
+}
+  
+#header-image-menu img{
+    width: 1300px;
+    margin: none;
+    padding: none;
+    height: 200px;
+}
+  
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Roboto';
+    transform: translate(-%30, %0);
+    color: grey;
+    text-align: center;
+}
 
+  
 
