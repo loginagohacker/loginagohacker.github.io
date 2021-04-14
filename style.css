@@ -5,8 +5,8 @@ body {
   margin-left: 380px;
 }
 a {
-  background-color: red;
-  color: white;
+  background-color: inherit;
+  color: inherit;
   padding: 1em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
