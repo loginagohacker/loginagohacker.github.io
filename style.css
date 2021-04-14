@@ -11,8 +11,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: white;
+a:active {
+  background-color: inherit;
+  color: gray;
 }
 
 a:active {
