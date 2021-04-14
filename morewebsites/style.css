@@ -5,24 +5,23 @@ body {
   margin-left: 380px;
 }
 a {
-a {
-  background-color: red;
-  color: white;
+  background-color: inherit;
+  color: inherit;
   padding: 1em 1.5em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 a:hover {
-  background-color: #555;
+  background-color: #404040;
 }
 
 a:active {
-  background-color: black;
+  background-color: #686868;
 }
 
 a:visited {
-  background-color: #ccc;
+  background-color: inherit;
+  color: grey;
 }
 p, LI, UL {
   color: white;
@@ -44,4 +43,16 @@ h3 {
   color: white;
   text-align: center;
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background-image: url("editedlhpic.jpg");
+  color: white;
+  font-size: 30px;
+}
 
+  
