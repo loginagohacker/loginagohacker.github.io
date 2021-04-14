@@ -5,10 +5,26 @@ body {
   margin-left: 380px;
 }
 a {
-  color: inherit;
-  text-decoration: inherit;
-  -webkit-tap-highlight-color: transparent;
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+a:hover {
+  background-color: #555;
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  background-color: #ccc;
+}
+  
+
 p, LI, UL {
   color: white;
   text-align: left;
@@ -28,4 +44,9 @@ h2 {
 h3 {
   color: white;
   text-align: center;
+}
+iframe {
+   msallowfullscreen: yes; 
+   mozallowfullscreen: yes; 
+   allowfullscreen: yes;
 }
