@@ -45,6 +45,9 @@ h3 {
   color: white;
   text-align: center;
 }
+table, th, td {
+  border: 1px solid black;
+}
 iframe {
    msallowfullscreen: yes; 
    mozallowfullscreen: yes; 
