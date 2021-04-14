@@ -19,9 +19,7 @@ a:active {
   background-color: #686868;
 }
 
-a:visited {
-  background-color: inherit;
-}
+
 p, LI, UL {
   color: white;
   text-align: left;
