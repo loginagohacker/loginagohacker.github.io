@@ -72,7 +72,7 @@ table, th, td {
     top: 60%;
     left: 60%;
     font-family: 'Roboto';
-    transform: translate(-%50, -%50);
+    transform: translate(%50, %50);
     color: grey;
     text-align: center;
 }
