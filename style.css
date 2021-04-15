@@ -62,14 +62,14 @@ table, th, td {
 /* Styling Header Image Menu */
 /*****************************/
 #header-image-menu{
-    top: 10px;
+    top: 1px;
 }
   
 #header-image-menu img{
-    width: 2000px;
+    width: 1024px;
     margin: none;
     padding: none;
-    height: 800px;
+    height: 768px;
 }
   
 #image-text{
