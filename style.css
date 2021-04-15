@@ -22,10 +22,13 @@ a:hover {
 }
 
 
-p, LI, UL {
+p{
   color: white;
   text-align: left;
 }
+UL, LI {
+  color: white;
+  text-align: center;
 P {
   color: white;
   text-align: left;
