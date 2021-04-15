@@ -28,7 +28,7 @@ p{
   color: white;
   text-align: left;
 }
-UL, LI {
+UL, LI, b, i {
   color: white;
   text-align: center;
 P {
