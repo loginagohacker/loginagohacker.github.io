@@ -1,32 +1,37 @@
 body {
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #272f2f;
   margin-left: 380px;
+  font-family: courier, arial, helvetica;
+  background-color: #333333;
 }
-a {
+#grad {
+  background-image: linear-gradient(red, yellow);
+}
+a, div {
   background-color: inherit;
   color: inherit;
   padding: 1em 1.5em;
   text-decoration: none;
-}
-
-a:hover {
-  background-color: inherit;
+  text-align: center;
 }
 
 a:active {
-  background-color: #686868;
-}
-
-a:visited {
   background-color: inherit;
   color: gray;
 }
-p, LI, UL {
+
+a:hover {
+  background-color: #686868;
+}
+
+
+p{
   color: white;
   text-align: left;
 }
+UL, LI, b, i {
+  color: white;
+  text-align: center;
 P {
   color: white;
   text-align: left;
@@ -61,10 +66,10 @@ table, th, td {
 }
   
 #header-image-menu img{
-    width: 1300px;
+    width: 2000px;
     margin: none;
     padding: none;
-    height: 200px;
+    height: 800px;
 }
   
 #image-text{
@@ -78,4 +83,3 @@ table, th, td {
 }
 
   
-
