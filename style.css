@@ -71,6 +71,8 @@ table, th, td {
     margin: none;
     padding: none;
     height: 768px;
+    text-align: left;
+    text-align-last: auto;
 }
   
 #image-text{
