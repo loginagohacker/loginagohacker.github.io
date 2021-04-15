@@ -3,6 +3,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   background-color: #272f2f;
   margin-left: 380px;
+  font-family: courier, arial, helvetica;
 }
 a {
   background-color: inherit;
