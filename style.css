@@ -1,10 +1,12 @@
 body {
   margin: 0;
   color: rgba(255, 255, 255, 0.6);
-  background-color: gray;
   margin-left: 380px;
   font-family: courier, arial, helvetica;
-  filter: progid:DXImageTransform.Microsoft.Gradient(endColorstr='#C0CFE2', startColorstr='#FFFFFF', gradientType='0');
+  background-image: linear-gradient(gray, black);
+}
+#grad {
+  background-image: linear-gradient(red, yellow);
 }
 a, div {
   background-color: inherit;
