@@ -5,7 +5,7 @@ body {
   margin-left: 380px;
   font-family: courier, arial, helvetica;
 }
-a {
+a, div {
   background-color: inherit;
   color: inherit;
   padding: 1em 1.5em;
