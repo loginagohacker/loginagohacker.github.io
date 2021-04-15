@@ -53,7 +53,8 @@ table, th, td {
   border-collapse: collapse;
 }
 .header {
-  text-align: center;
+  text-align: justify;
+  text-align-last: auto;
   background-image: url("PSX_20210414_111706.jpg");
   color: white;
   font-size: 30px;
