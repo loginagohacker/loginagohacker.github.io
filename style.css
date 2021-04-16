@@ -12,21 +12,13 @@ li, LI, UL {
   color: black;
   font-family: sans-serif, helvetica;
 }
-a, div {
-  background-color: inherit;
-  color: inherit;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  text-align: center;
-}
-
 a:active {
- background-color: inherit;
+ background-color: gray;
   opacity: 0.5;}
 
 a:hover {
   opacity: 0.5;
-  background-color: inherit;
+  background-color: gray;
 }
 
 
