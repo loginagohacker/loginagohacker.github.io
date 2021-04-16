@@ -7,8 +7,11 @@ body {
   color: white;
   font-family: sans-serif, helvetica;
 }
-nav-pills > .active > a, .nav-pills > .active > a:hover {
-    background-color: #FF9473;
+a {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    text-shadow:;
+    color: gray;
+    text-align: center;
 }
 li, LI, UL {
   color: black;
@@ -148,8 +151,7 @@ h4 {
   -webkit-text-fill-color: transparent;
 
 }
-.nav-pills > .active > a, .nav-pills > .active > a:hover {
-    background-color: #FF9473;
+
 }
 details summary {
   cursor: pointer;
