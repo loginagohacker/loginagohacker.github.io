@@ -51,12 +51,11 @@ table, th, td {
 }
   
 #header-image-menu img{
-    width: 3000px;
+    width: 1024px;
     margin: none;
     padding: none;
-    height: 200px;
-    text-align: left;
-    text-align-last: auto;
+    height: 768px;
+    text-align: center;
 }
   
 #image-text{
