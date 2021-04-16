@@ -8,13 +8,17 @@
 </head>
 <body>
  <div class="tab" style="text-align:center">
+       <button class="tablinks" onClick="openUs(event, 'Home')">Home</a>
     <button class="tablinks" onClick="openUs(event, 'Changelog')">Recent Changes/Updates</a>
     <button class="tablinks" onClick="openUs(event, 'FlipAI')">FlipAI</a>
     <button class="tablinks" onClick="openUs(event, 'AboutUs')">About Us</a>
-      <button class="tablinks" onClick="openUs(event, 'SitesList')">Sites Directory</a>
       <button class="tablinks" onClick="openUs(event, 'CalcCheats')">Calculator Stuff</a>
       <button class="tablinks" onClick="openUs(event, 'Support')">Support Us</a>
       <button class="tablinks" onClick="openUs(event, 'Notes')">Various Notes</a>
+    </div>
+   <div id="Home" class='tabcontent'>
+      <a rel="home" href="index.html">Click here to go back to the homepage</a>
+                <p>-----------------------------------------</p>
     </div>
     <div id="Notes" class='tabcontent'>
       <a rel="notes" href="notehelper.html">Click here to view the notes (for schooling)</a>
