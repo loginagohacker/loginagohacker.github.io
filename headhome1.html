@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="style" type="text/css" href="style.css"/>
+</head>
+  <body>
+    <div class="tab" style="text-align:center">
+    <button class="tablinks" onClick="openUs(event, 'Changelog')">Recent Changes/Updates</a>
+    <button class="tablinks" onClick="openUs(event, 'FlipAI')">FlipAI</a>
+    <button class="tablinks" onClick="openUs(event, 'AboutUs')">About Us</a>
+      <button class="tablinks" onClick="openUs(event, 'SitesList')">Sites Directory</a>
+      <button class="tablinks" onClick="openUs(event, 'CalcCheats')">Calculator Stuff</a>
+      <button class="tablinks" onClick="openUs(event, 'Support')">Support Us</a>
+      <button class="tablinks" onClick="openUs(event, 'Notes')">Various Notes</a>
+    </div>
+    <div id="Notes" class='tabcontent'>
+      <a rel="notes" href="https://loginagohacker.github.io/SchoolHelp/notehelper.html">Click here to view the notes (for schooling)</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Support" class='tabcontent'>
+      <a rel="suport" href="https://www.bonfire.com/the-systems/" target="_blank">Click here to support us!</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="CalcCheats" class='tabcontent'>
+      <a rel="calccheats" type="text/html" href="https://loginagohacker.github.io/TI8483CheatsandHelps/">Click here to view the calculator cheats page</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="SitesList" class='tabcontent'>
+      <a rel="directive" type="text/html" href="sites_list.html">Click here to get redirected to the directory</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Changelog" class='tabcontent'>
+    <a rel="changelog" type="text/html" href="changelog.html">Click here to view the Changelog</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="FlipAI" class='tabcontent'> 
+      <a type="text/html" href="main.html">Click here to get directed to the FlipAI website</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="AboutUs" class='tabcontent'>
+      <a type="text/html" href="about.html">Click here to get directed to the About Us page.</a>
+      <p>-----------------------------------------</p>
+    </div>
+      <script>
+function openUs(evt, usType) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(usType).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+      </body>
+</html>
