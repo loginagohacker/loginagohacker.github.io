@@ -49,11 +49,10 @@ table, th, td {
 }
   
 #header-image-menu img{
-    width: 1024px;
+    width: 2000px;
     margin: none;
     padding: none;
-    height: 768px;
-    text-align: center;
+    height: 200px;
 }
   
 #image-text{
