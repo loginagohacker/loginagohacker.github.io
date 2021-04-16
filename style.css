@@ -1,12 +1,14 @@
 body {
-  background-image: url("background.jpeg");
-  height: 500px; /* You must set a specified height */
+  background-image: url("background.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   text-align: center;
   color: white;
   font-family: sans-serif, helvetica;
+}
+nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #FF9473;
 }
 li, LI, UL {
   color: black;
