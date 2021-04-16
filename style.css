@@ -1,67 +1,87 @@
 body {
-  background-image: url("background.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background: url(background.png) repeat 0 0;
   text-align: center;
   color: white;
   font-family: sans-serif, helvetica;
-  background-color: gray;
+
 }
-a {
-  font-family: 'Nobile', Helvetica, Arial, sans-serif;
-    text-shadow:;
-    color: gray;
-    text-align: center;
+x {
+  color: white;
+  text-align: center;
+  font-family: sans-serif, helvetica;
+  font-size: 20px;
 }
-li, LI, UL {
+x {
+  color: white;
+  text-align: center;
+  font-family: sans-serif, helvetica;
+  font-size: 12px;
+}
+x {
+  color: white;
+  text-align: left;
+  font-family: sans-serif, helvetica;
+  font-size: 20px;
+}
+x {
+  color: white;
+  text-align: right;
+  font-family: sans-serif, helvetica;
+  font-size: 20px;
+}
+x {
+  color: white;
+  text-align: center;
+  font-family: sans-serif, helvetica;
+  font-size: 20px
+}
+x {
+  color: white;
+  text-align: center;
+  font-family: sans-serif, helvetica;
+  font-size: 30px;
+}
+li {
   color: black;
   font-family: sans-serif, helvetica;
 }
-a:active {
- background-color: gray;
-  opacity: 0.5;}
-
-a:hover {
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+}
+.tab button {
+  background-color: transparent;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.9s;
+  font-size: 17px;
+  color: white;
+}
+.tab button:hover {
   opacity: 0.5;
   background-color: gray;
 }
+.tab button.active {
+  opacity: 0.5;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border: 1px white;
+}
+button {
+  text-align: center;
+}
+.active {
+  background-color: gray;
+  opacity: 0.5;
+}
 
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.header {
-  text-align: justify;
-  text-align-last: auto;
-  background-image: url("PSX_20210414_111706.jpg");
-  color: white;
-  font-size: 30px;
-}
-/*****************************/
-/* Styling Header Image Menu */
-/*****************************/
-#header-image-menu{
-    top: 1px;
-}
-  
-#header-image-menu img{
-    width: 1500px;
-    margin: none;
-    padding: none;
-    height: 200px;
-}
-  
-#image-text{
-    position: absolute;
-    top: 60%;
-    left: 60%;
-    font-family: 'Roboto';
-    transform: translate(-%30, %0);
-    color: grey;
-    text-align: center;
-}
 @font-face {
   font-family: 'Corben';
   font-style: normal;
@@ -152,7 +172,8 @@ h4 {
   -webkit-text-fill-color: transparent;
 
 }
-
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #FF9473;
 }
 details summary {
   cursor: pointer;
@@ -178,4 +199,42 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#header-image-menu{
+    top: 1px;
+}
+  
+#header-image-menu img{
+    width: 1500px;
+    margin: none;
+    padding: none;
+    height: 200px;
+}
+  
+#image-text{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-family: 'Roboto';
+    transform: translate(-%30, %0);
+    color: grey;
+    text-align: center;
+}
+li, LI, UL {
+  color: black;
+  font-family: sans-serif, helvetica;
+}
+a:active {
+ background-color: gray;
+  opacity: 0.5;}
+
+a:hover {
+  opacity: 0.5;
+  background-color: gray;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
