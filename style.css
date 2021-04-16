@@ -1,5 +1,5 @@
 body {
-  background: url(background.jpg) repeat 0 0;
+  background: url(background.jpeg) repeat 0 0;
   text-align: center;
   color: white;
   font-family: sans-serif, helvetica;
@@ -46,10 +46,10 @@ table, th, td {
 }
   
 #header-image-menu img{
-    width: 200px;
+    width: 3000px;
     margin: none;
     padding: none;
-    height: 386px;
+    height: 200px;
     text-align: left;
     text-align-last: auto;
 }
