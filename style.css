@@ -1,9 +1,12 @@
 body {
-  background: url(background.jpeg) repeat 0 0;
+  background-image: url("background.jpeg");
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   text-align: center;
   color: white;
   font-family: sans-serif, helvetica;
-
 }
 li, LI, UL {
   color: black;
