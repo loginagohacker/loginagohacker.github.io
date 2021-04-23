@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+  <head> 
+    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Files Directory</title> 
+    <link rel="shortcut icon" type="image/png" href="flipai.png"/> 
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+  </head> 
+  <body>
+    <div class="tab" style="text-align:center">
+          <button class="tablinks" onClick="openUs(event, 'Home')"> Home</button>
+    <button class="tablinks" onClick="openUs(event, 'Changelog')">Recent Changes/Updates</button>
+    <button class="tablinks" onClick="openUs(event, 'FlipAI')">FlipAI</button>
+      <button class="tablinks" onClick="openUs(event, 'SitesList')">Sites Directory</button>
+      <button class="tablinks" onClick="openUs(event, 'CalcCheats')">Calculator Stuff</button>
+      <button class="tablinks" onClick="openUs(event, 'Support')">Support Us</button>
+      <button class="tablinks" onClick="openUs(event, 'Notes')">Various Notes</button>
+    </div>
+      <a rel="tabs" href="tabs.html">Click here to see some nice tabs for the acoustic guitar.</a>
+    <div id="Home" class='tabcontent'>
+      <a rel="home" href="index.html">Click here to go back to the homepage</a>
+                <p>-----------------------------------------</p>
+    </div>
+    <div id="Notes" class='tabcontent'>
+      <a rel="notes" href="https://loginagohacker.github.io/SchoolHelp/notehelper.html">Click here to view the notes (for schooling)</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Support" class='tabcontent'>
+      <a rel="suport" href="https://www.bonfire.com/the-systems/" target="_blank">Click here to support us!</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="CalcCheats" class='tabcontent'>
+      <a rel="calccheats" type="text/html" href="https://loginagohacker.github.io/TI8483CheatsandHelps/">Click here to view the calculator cheats page</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="SitesList" class='tabcontent'>
+      <a rel="directive" type="text/html" href="sites_list.html">Click here to get redirected to the directory</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Changelog" class='tabcontent'>
+    <a rel="changelog" type="text/html" href="changelog.html">Click here to view the Changelog</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="FlipAI" class='tabcontent'> 
+      <a type="text/html" href="main.html">Click here to get directed to the FlipAI website</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="AboutUs" class='tabcontent'>
+      <a type="text/html" href="about.html">Click here to get directed to the About Us page.</a>
+      <p>-----------------------------------------</p>
+    </div>
+      <script>
+function openUs(evt, usType) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(usType).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+    <header>
+      <!--Logo and nav bar code-->
+  
+    <div id="top-header">
+      <div id="header-image-menu">
+        <img src="banner.png">
+    </div>
+      </div>
+    </header>
+    </div>
+  <h1>Audio Files Directory List</h1>
+  <div>
+    <a rel="idiot" href="https://github.com/loginagohacker/files-shiz/blob/main/audio/greenday/1.Green%20Day%20-%20American%20Idiot.mp3?raw=true">Click here to download American Idiot by Green Day</a>
+    <a rel="suburbia" href="https://github.com/loginagohacker/files-shiz/blob/main/audio/greenday/2.%20Green%20Day%20-%20Jesus%20of%20Suburbia.mp3?raw=true">Click here to download Jesus of Suburbia by Green Day</a>
+    <a rel="holiday" href="https://github.com/loginagohacker/files-shiz/blob/main/audio/greenday/3.%20Green%20Day%20-%20Holiday.mp3?raw=true">Click here to download Holiday by Green Day</a>
+  </div>
+    </body>
