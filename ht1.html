@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Install Arch Linux on a Chromebook</title> 
+    <link rel="shortcut icon" type="image/png" href="flipai.png"/> 
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+  </head> 
+  <body>
+    <div class="tab" style="text-align:center">
+    <button class="tablinks" onClick="openUs(event, 'Changelog')">Recent Changes/Updates</a>
+    <button class="tablinks" onClick="openUs(event, 'FlipAI')">FlipAI</a>
+    <button class="tablinks" onClick="openUs(event, 'AboutUs')">About</a>
+      <button class="tablinks" onClick="openUs(event, 'SitesList')">Sites Directory</a>
+      <button class="tablinks" onClick="openUs(event, 'CalcCheats')">Calculator Stuff</a>
+      <button class="tablinks" onClick="openUs(event, 'Support')">Support</a>
+      <button class="tablinks" onClick="openUs(event, 'Notes')">Various Notes</a>
+    </div>
+    <div>
+      <a rel="HowToCompendium" href="htindex.html">Click here to go back to the How-To website compendium</a>
+    </div>
+   <div>
+  <a rel="tabs" href="tabs.html">Click here to see some nice tabs for the acoustic guitar.</a>
+  </div>
+  <div>
+    <a rel="fileshiz" href="fileshiz.html">Click here to get to the page that has downloadable audio to listen to.</a>
+  </div>
+    </div>
+    <div id="Notes" class='tabcontent'>
+      <a rel="notes" href="notehelper.html">Click here to view the notes (for schooling)</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Support" class='tabcontent'>
+      <a rel="suport" href="https://www.bonfire.com/the-systems/" target="_blank">Click here to support us!</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="CalcCheats" class='tabcontent'>
+      <a rel="calccheats" type="text/html" href="https://loginagohacker.github.io/TI8483CheatsandHelps/">Click here to view the calculator cheats page</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="SitesList" class='tabcontent'>
+      <a rel="directive" type="text/html" href="sites_list.html">Click here to get redirected to the directory</a>
+          <p>-----------------------------------------</p>
+    </div>
+    <div id="Changelog" class='tabcontent'>
+    <a rel="changelog" type="text/html" href="changelog.html">Click here to view the Changelog</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="FlipAI" class='tabcontent'> 
+      <a type="text/html" href="main.html">Click here to get directed to the FlipAI website</a>
+    <p>-----------------------------------------</p>
+  </div>
+    <div id="AboutUs" class='tabcontent'>
+      <a type="text/html" href="about.html">Click here to get directed to the About Us page.</a>
+      <p>-----------------------------------------</p>
+    </div>
+      <script>
+function openUs(evt, usType) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(usType).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+  <style>
+        /* designing title and tag line */
+        h1, p {
+            border: 4px solid white;
+            padding: 10px 50px;
+            position: relative;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <header>         
+    <!--logo and nav bar-->
+    <div id="top-header">
+      <div id="header-image-menu">
+        <img src="banner.png">
+    </div>
+      </div>
+    </header>
+</head>
+  
+      <center>
+      <p>Please click on the "Sites Directory" tab in order to view the website compendium.</p>
+      <p>Please click on the "Recent Changes/Updates" tab for information regarding FlipAI and this website.</p>
+    </center>
+<div>
+  <center>
+    <h1>How To Install Arch Linux on a Chromebook</h1>
+  </center>
+  <div align="left">
+    <p>Difficulty level: Moderate</p>
+    <p>Not for the new Chromebook enthusiast.</p>
+  </div>
+  <div>
+    <center>
+      <i>
+        <h3>What is Arch Linux?</h3>
+      </i>
+    </center>
+    <div align="left">
+      <p>Arch Linux is a Linux distribution meant for computers with x86-64 processors. Arch Linux adheres to the KISS principle and is focused on simplicity, modernity, pragmatism, user centrality, and versatility.</p>
+      <p>To put it simply, Arch Linux is a computer operating system designed to be able to be portable and it is a good choice for installing on a device with little memory, like a Chromebook</p>
+    </div>
+    <div>
+      <center>
+        <h3>What you need:</h3>
+        <ol>
+          <li>A small screwdriver</li>
+          <li>An internet connection</li>
+          <li>A USB pendrive/SD card/memory stick/hard drive of at least 1 GB of space, and with nothing on it that you care about, as all data will be removed</li>
+          <li>I reccomend doing this on a Chromebook with a hard drive size of at least 16 GB</li>
+          <li>A bit of patience</li>
+        </div>
+      <div>
+      <center>
+        <h3>Step One: Enable developer mode on your Chromebook</h3>
+      </center>
+    </div>
+    <div align="left">
+      <p>Developer mode is a Chromebook mode that allows users to do potentially destructive things, or to simply experiment with the newest un-released features.</p>
+      <p>To be able to use developer mode on your Chromebook is synonymous with "unlocking it's full potential"<i>See:<a>https://lifehacker.com/how-to-install-linux-on-a-chromebook-and-unlock-its-ful-509039343</a></i></p>
+      <p>Just a note: Make sure you have an internet connection.</p>
+      <p>Press the escape (esc) key, the refresh (little circular arrow or F3) button, and the power button at the same time</p>
+      <p>Once the recovery mode screen pops up (the one with the big yellow exclamation point or the one that says insert recovery medium), press ctrl+d</p>
+      <p>Once the computer prompts you, press ctrl+d again.</p>
+      <p>The computer will tell you that ChromeOS verification is off. Press ctrl+d to continue, and wait. ChromeOS will automatically enable developer mode from there.</p>
+      <p>Once the computer reboots, select enable debug tools.</p>
+      <p>The computer will reboot, at which point you will have to log in again, and you will need your internet connection.</p>
+        </div>
+        <div>
+          <center>
+            <h3>Creating an Arch Linux bootable device from ChromeOS</h3>
+          </center>
+        </div>
+        <div align="left">
+          <p>The first thing that you need to make a bootable device from your Chromebook, the easy way, is to install a program called Chromebook Recovery Utility. You can download it from the Web Store.</p>
+          <p>You can download the Arch Linux ISO file (U.S. Arch download mirror) from here: <a>https://archlinux.surlyjake.com/archlinux/iso/2021.06.01/</a></p>
+          <p>I recommend downloading the ISO file to your Downloads folder.</p>
+          <p>Next, after the file is downloaded, find the file wherever you saved it and rename it.</p>
+          <p>Click the left arrow key until you get to the end of the name, the part that says it is .iso</p>
+          <p>Delete the .iso part, and replace it with .bin</p>
+          <p>Now, go to your Chromebook Recovery Utility app.</p>
+          <p>Click on the cog wheel in the top right hand corner of the app's window (next to the x) and select the option that says somethign along the line of "use your own recovery image"</p>
+          <p>Select the .bin file that you made.</p>
+          <p>Follow the instructions that the app suggests from there.</p>
+        </div>
+        <div>
+          <center>
+            <h3>Removing the write protect screw</h3>
+          </center>
+        </div>
+        <div align="left">
+          <p>Power off your Chromebook.</p>
+          <p>Take the cover that hides the internal stuff of your Chromebook off.</p>
+          <p>Locate the write-protect screw of your Chromebook. The screw's location depends on the model of your Chromebook. To find it, you can do a simple Google search. For example, you can search "Where is the write-protect screw of my Acer Chromebook 11?"</p>
+          <p>After you have removed the write-protect screw, put your Chromebook back together.</p>
+          <p>After you have put your Chromebook back together, press ctrl+alt+F1 (or the little arrow at the top of your keyboard that points to the left)</p>
+          <p>Sign in as user "chronos," and enter your password.</p>
+          <p>Now, go into super user mode (sudo su) and hit enter.</p>
+          <p>Enter the command:</p>
+            <div>
+              <i>sudo flashrom -p host --wp-disable<i>
+                </div>
+                <p>And write-protect is officially off.</p>
+                <p>To get back to ChromeOS, press ctrl+alt+F2 (which is the little arrow at the top of you rkeyboard that points to the right)</p>
+                <div>
+          <center>
+            <h3>Flashing UEFI firmware in order to load Arch</h3>
+            <p>IMPORTANT: This will delete all data, including Chrome OS.</p>
+          </center>
+        </div>
+        <div align="left">
+                    <p>THis process is potentially destructive, and it can brick (ruin) your device. Make sure you check the "Supported Devices" list on MrChromebox.Tech (which can be viewed<a rel="devicesupport" href="https://mrchromebox.tech/#devices">here</a></p>
+          <p>Press ctrl+alt+t in order to open a Crosh terminal session.</p>
+          <p>Type "shell"</p>
+          <p>Enter your password that you chose for "root" when you created it.</p>
+          <p>Now, once you log in to your shell, type the following commands:</p>
+            <div align="left">
+              <i>
+                <p>cd; curl -LO mrchromebox.tech/firmware-util.sh</p>
+                <p>sudo install -Dt /usr/local/bin -m 755 firmware-util.sh</p>
+                <p>sudo firmware-util.sh</p>
+              </i>
+          </div>
+          <p>Once the menu pops up, choose "Install/Update UEFI (Full ROM) Firmware"</p>
+          <p>Follow the instructions that pop up.</p>
+                </div>
+                <div>
+                  <center>
+                    <h3>Installing Arch Linux</h3>
+                  </center>
+                </div>
+                <div>
+                  <p>Now that you have flashed the UEFI BIOS, you can continue with the next steps, that is, if you have not bricked your device. It is extremely difficult to unbrick a device, and shall not be discussed here</p>
+                  <p>Insert the USB that you made and power on your Chromebook.</p>
+                  <p>Hit the escape key when the screen shows a picture of a rabbit.</p>
+                  <p>Select "boot menu"</p>
+                  <p>Select "General USB Flash Disk" or whatever the external device is named.</p>
+                  <p>Note: SD cards, usually, do not seem to work.</p>
+                  <p>Boot into Arch Linux, and select the first option that is shown on the Arch installer menu.</p>
+                  <p>In the nest section, the code to install it to your disk will be shown and included. Please note that it takes a while to do, and is a bit difficult, and it can be highly destructive if not done properly.</p>
+                  </div>
+                <div>
+                  <center>
+                    <h3>How To Install Arch Linux to Chromebook Memory and Such</h3>
+                  </center>
+                </div>
+                <div align="left">
+                  <p>To install Arch Linux, use the following code. This will include installation of a GUI, which, by default, is not enabled in Arch.</p>
+                  <i>fdisk -l</i>
+                  <i>fdisk /dev/-name of disk (which will be called mmcblk with a number at the end.)-</i>
+                  <i>Delete first partitions (by pressing "d")</i>
+                  <i>Delete the next partitoon, by repeating the above.</i>
+                  <i>Write the partition table by pressing "w"</i>
+                  <i>Go back to the second step and press
+  </body> 
+</html>
