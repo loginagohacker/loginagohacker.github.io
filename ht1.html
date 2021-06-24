@@ -71,9 +71,7 @@ function openUs(evt, usType) {
 </script>
   <style>
         /* designing title and tag line */
-        h1, p {
-            border: 4px solid white;
-            padding: 10px 50px;
+        h1, p {            padding: 10px 50px;
             position: relative;
             border-radius: 10px;
             font-family: Arial, Helvetica, sans-serif;
@@ -217,11 +215,74 @@ function openUs(evt, usType) {
                 </div>
                 <div align="left">
                   <p>To install Arch Linux, use the following code. This will include installation of a GUI, which, by default, is not enabled in Arch.</p>
-                  <i>fdisk -l</i>
-                  <i>fdisk /dev/-name of disk (which will be called mmcblk with a number at the end.)-</i>
+                  <b>fdisk -l</b>
+                  <b>fdisk /dev/-name of disk (which will be called mmcblk with a number at the end.)-</b>
                   <i>Delete first partitions (by pressing "d")</i>
                   <i>Delete the next partitoon, by repeating the above.</i>
                   <i>Write the partition table by pressing "w"</i>
-                  <i>Go back to the second step and press
+                  <i>Go back to the second step and press "t" to change it.</i>
+                  <i>Press "1" to change it to an "EFI system" partition."</i>
+                  <i>Press "w" to write the changes.</i>
+                  <i>Exit by pressing "q".</i>
+                  <i>Now, you will want to change more info about the partiotions. In the command that follows, the # is the number that goes after the mmcblk for your memory. Enter the command:</i>
+                  <b>mkfs.fat -F32 /dev/mmcblk#p1</b>
+                  <b>mkfs.ext4 /dev/mmcblk#p2</b>
+                  <b>iwctl</b>
+                  <i>Now, you will want to conect to Wi-Fi, in the iwd menu.</i>
+                  <b>device list</b>
+                  <i>Select your Wi-Fi card. It will most likely be WLAN0</i>
+                  <b>station wlan0 connect name-of-your-network</b>
+                  <i>Enter your password when prompted. It may take up to three attempts for it to work.</i>
+                  <i>Now, exit iwctl by pressing "q"</i>
+                  <i>Check your network.</i>
+                  <b>ping google.com</b>
+                  <i>Pinging to Google should get a list of stuff back, saying 64 bytes, if your network works properly.</i>
+                  <i>Pres "ctrl+c" to cancel ping, and go back to command stuff</i>
+                  <i>Install the most important Arch stuff ever.</i>
+                  <b>pacman -Syy</b>
+                  <i>Install the mirror list needed to install and download programs.</i>
+                  <b>pacman -S reflector</b>
+                  <i>Establish mount points.</i>
+                  <b>mount /dev/mmcblk#p2 /mnt</b>
+                  <i>Install files that you cannot run Arch without</i>
+                  <b>pacstrap /mnt base linux linux-firmware vim nsno</b>
+                  <i>Generate filesystem tables and labels and such.</i>
+                  <b>genfstab -U /mnt >> /mnt/etc/fstab</b>
+                  <i>Enter your chroot</i>
+                  <b>arch-chroot /mny</b>
+                  <i>Show timezones</i>
+                  <b>timedatectl list-timezones</b>
+                  <i>Find and remember your timezone.</i>
+                  <i>Set system date and time (the following command is set to set for Mountain Standard Time)</i>
+                  <b>timedatectl set-timezone America/Denver</b>
+                  <i>Generate locale</i>
+                  <b>locale-gen</b>
+                  <i>Create hostname stuff</i>
+                  <b>echo user > /etc/hostname</b>
+                  <i>Do more stuff with hosts and stuff</i>
+                  <b>touch /etc/hosts</b>
+                  <b>touch /etc/host</b>
+                  <i>Set root password</i>
+                  <b>passwd</b>
+                  <i>Install bootlader stuff</i>
+                  <b>pacman -S grub efibootmgr</b>
+                  <i>Set Linux startup disk mount point and stuff</i>
+                  <b>mkdir /boot/efi</b>
+                  <b>mount /dev/mmcblk#p1 /boot/efi</b>
+                  <i>Install GRUB</i>
+                  <b>grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi</b>
+                  <i>Set GRUB configuration</i>
+                  <b>grub-mkconfig -o /boot/grub/grub.cfg</b>
+                  <i>Install GUI and such</i>
+                  <b>pacman -S xorg gdm gnome cinnamon networkmanager systemd-networkd</b>
+                  <i>After those have installed and downloaded, enable their services.</i>
+                  <b>systemctl enable gdm.service</b>
+                  <b>systemctl enable networkmanager.service</b>
+                  <b>systemctl enable systemd-networkd</b>
+                  <i>Now that you have installed all of these, you can exit chroot (type "exit") and reboot into your system (type "reboot" after you exit chroot.).<i>
+                    <i>Congratulations! You have successfully installed Arch Linux on your Chromebook.</i>
+                    <i>Note: Sound will, most likely, not work at all.</i>
+                </div>
+                
   </body> 
 </html>
